@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset= "utf-8" >
+</head>
+<body>
+<div align="center">
+<table bordercolor="gray" border="3" rules="all" width="99%" height="99%">
+<tr>
+<td valign="top" bgcolor="ivory" ><h2>Порядковый номер</h2></td>
+<td valign="top" bgcolor="ivory"><h2>Латинская фраза</h2></td>
+<td valign="top" bgcolor="ivory"><h2>Произношение</h2></td>
+<td valign="top" bgcolor="ivory"><h2>Русский перевод</h2></td>
+
+</tr>
+
+
+{% for item in dict_list %}
+
+
+<tr>
+<td align="center" valign="top"><h2>{{forloop.counter}}</h2></td>
+<td valign="top"><h2>{{item.lat}}</h2></td>
+<td valign="top"><h2>{{item.trans}} </h2></td>
+<td valign="top"><h2>{{item.rus}} </h2></td>
+</tr>
+
+{% endfor %}
+
+</table>  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Книгофил</title>
+	
+    <!-- Bootstrap -->
+    
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	{% load static %}
+    <link href="{% static 'bootstrap.min.css' %}" rel='stylesheet' type='text/css'>
+    <link  href="{% static 'styleh2.css' %}" rel="stylesheet" type='text/css'>
+    {% load bootstrap4 %}
+    {% bootstrap_javascript %}
+    {% bootstrap_css %}
+    <style>body{background-color: ivory}
+    .stx{
+         font-style: italic;
+         font-weight: bold;
+         font-size: 15px;
+        }
+
+    </style>
+    
+  </head>
+<body>
+
+<div class = "container">
+  <div class="row">
+     <div class="col-md-4">
+         <p>
+         <br>
+         <br>
+         </p>
+         <img src="{% static 'images/image17.jpg' %}">
+         <p><span class="stx">
+         Скромность в повседневности помогла
+         <br>достигнуть великолепия и величия Древнего Рима         
+        </p>
+         <p>
+         <br>Римский ужин в вариантах:
+         <br><br>
+         <br>Закуска: салат, три улитки и два яйца на каждого человека
+         <br>Главное блюдо: каша из перловой крупы и спельты 
+         <br>(вид пшеницы)
+         <br>Десерт: оливки, огурцы, лук репчатый
+         <br><br>
+         <br>Закуска: порей, тунец с яйцами
+         <br>Главное блюдо: зелёная капуста,
+         <br>колбаски в белом мучном соусе, бобы с салом
+         <br><br>
+         <br>Закуска: лук репчатый, салат, тунец, яйца с сельдерееми и любистком,
+         <br>сыр,оливки
+         <br>Главное блюдо: рыба, устрицы, вымя свиньи
+         </p>
+         </span>
+         
+    </div>     
+         
+     <div class="col-md-8 " ><div class="div1"><h1 align="right">{{h131.title}}</h1><br><h4>&nbsp;&nbsp;{{h131.content}}</h4></div></div>
+  </div>
+</div>
+
+</html>

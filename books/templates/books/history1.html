@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html lang="ru">
+  <head>
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Книгофил</title>
+	
+    <!-- Bootstrap -->
+    
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	{% load static %}
+    <link href="{% static 'bootstrap.min.css' %}" rel='stylesheet' type='text/css'>
+    <link  href="{% static 'styleh2.css' %}" rel="stylesheet" type='text/css'>
+    {% load bootstrap4 %}
+    {% bootstrap_javascript %}
+    {% bootstrap_css %}
+    <style>body{background-color: ivory}
+    .stx{
+         font-style: italic;
+         font-weight: bold;
+         font-size: 18px;
+		 color: #990000;
+         background-color: #FFFFF0;
+        }
+    .jumbotron{
+      font-style: italic;
+	  margin-top: 5px;
+      padding: 17px;
+	  color: #990000;
+      background-color: #FFFFF0;
+	 }
+    </style>
+    
+  </head>
+<body>
+
+<div class = "container">
+  <div class="row">
+     <div class="col-md-4"><img src="{% static 'images/image1.jpg' %}">
+     <br>
+     <p><span class="stx">
+         Богу равным кажется мне по счастью
+         Человек, который так близко-близко
+         Пред тобой сидит, твой звучащий нежно
+         Слушает голос
+         И прелестный смех. У меня при этом
+         Перестало сразу бы сердце биться:
+         Лишь тебя увижу - уж я не в силах
+         Вымолвить слова.
+         Но немеет тотчас язык, под кожей
+         Быстро легкий жар пробегает, смотрят,
+         Ничего не видя, глаза, в ушах же -
+         Звон непрерывный.
+         Потом жарким я обливаюсь, дрожью
+         Члены все охвачены, зеленее
+         Становятся травы, и вот-вот как будто
+         С жизнью прощусь я,
+         Но терпи, терпи: чересчур далёко
+         Все зашло...
+         </span></p>
+<img src="{% static 'images/image5.jpg' %}"></div>
+<!--     <div class="col-md-8 " ><div class="div1"><h1 align="right">Несколько слов о Сафо</h1><br><h4>&nbsp;&nbsp;{{h2.content}}</h4></div></div>  -->
+<div class="col-md-8 " ><div class="jumbotron"><h1 align="center">Несколько слов о Сафо</h1><br><h4>&nbsp;&nbsp;{{h1.content}}</h4></div></div> 
+
+  </div>
+</div>
+
+</html>

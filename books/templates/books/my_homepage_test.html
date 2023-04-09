@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+{% load staticfiles %}
+<link href="{% static 'bootstrap.min.css' %}" rel='stylesheet' type='text/css'>
+<link  href="{% static 'style.css' %}" rel="stylesheet" type='text/css'>
+{% load bootstrap3 %}
+{% bootstrap_javascript %}
+{% bootstrap_css %}
+
+</head>
+
+
+
+
+<body> 
+    {% bootstrap_button "Save" button_type="button" button_class="btn-primary" size="large" %}
+</body>
+</html>
+
+

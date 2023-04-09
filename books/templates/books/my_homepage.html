@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Книгофил</title>
+	
+    <!-- Bootstrap -->
+    
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	{% load static %}
+    <link href="{% static 'bootstrap.min.css' %}" rel='stylesheet' type='text/css'>
+    <link  href="{% static 'style.css' %}" rel="stylesheet" type='text/css'>
+    {% load bootstrap4 %}
+    {% bootstrap_javascript %}
+    {% bootstrap_css %}
+  </head>
+<body>
+<h1 align="center">Книгофил</h1>
+<br>
+<div class = "container">
+  <div class="row">
+    <div class="col-md-2">{% bootstrap_button "Проза" button_type="link" button_class="btn-primary" size="large" href="prose" %}</div>
+    <div class="col-md-2">{% bootstrap_button "История" button_type="link" button_class="btn-primary" size="large" href="history" %}</div>
+    <div class="col-md-2">{% bootstrap_button "Статьи" button_type="link" button_class="btn-primary" size="large" href="articles" %}</div>
+    <div class="col-md-2">{% bootstrap_button "Форум" button_type="link" button_class="btn-primary" size="large" href="forum" %}</div>
+    <div class="col-md-2">{% bootstrap_button "Словарь" button_type="link" button_class="btn-primary" size="large" href="dict" %}</div>
+    <div class="col-md-2">{% bootstrap_button "Почта" button_type="link" button_class="btn-primary" size="large" href="mail" %}</div>
+  </div>
+</div>
+<div align="center">
+<h4 align="center">
+Этот сайт пусть станет Вашим ресурсом в образовании, отдыхе <br>и решении личных и профессиональных задач. В разделе «Проза» вы сможете<br> почитать опусы других и разместить свое художественное произведение.<br> Раздел «История» содержит постоянно обновляемые эссе, посвященные наиболее<br> интересным моментам мировой истории, о которых на публике говорится мало.<br> Значения новых слов есть возможность узнать в нашем «Словаре»,<br> кроме того,<br> вы сможете обогатить свою речь звучными фразами на латыни, произношение<br> которых там также указано. В  части «Статьи» можно почитать статьи<br> по самым разным темам, а также попробовать поделиться<br> своими достижениями. В разделе «Форум» мы <br>будем размещать комментарии к прочитанному.
+	Заявки, объявления, отправляйте, зайдя, в раздел «Почта».<br> Сайт только создается, поэтому разделы «Форум» и «Почта»<br> могут пока временно не работать.
+</h4>
+</body>
+</html>

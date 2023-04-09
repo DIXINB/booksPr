@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="ru">
+  <head>
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Книгофил</title>
+	
+    <!-- Bootstrap -->
+    
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	{% load static %}
+    <link href="{% static 'bootstrap.min.css' %}" rel='stylesheet' type='text/css'>
+    <link  href="{% static 'styleh2.css' %}" rel="stylesheet" type='text/css'>
+    {% load bootstrap4 %}
+    {% bootstrap_javascript %}
+    {% bootstrap_css %}
+    <style>body{background-color: ivory}
+    .stx{
+         font-style: italic;
+         font-weight: bold;
+         font-size: 14px;
+		 color: #990000;
+         background-color: #FFFFF0;
+        }
+    .jumbotronN{
+      font-style: normal;
+	  margin-top: 5px;
+      padding: 17px;
+	  color: #990000;
+      background-color: #FFFFF0;
+	 }
+    </style>
+    
+  </head>
+<body>
+
+<div class = "container">
+  <div class="row">
+     <div class="col-md-4">	      	 
+     <p><span class="stx">       
+     <img src="{% static 'images/image6.jpg' %}"><br>Sahelanthropus<br><br><br>
+     <img src="{% static 'images/image7.jpg' %}"><br>Australopithecus<br><br><br>
+     <img src="{% static 'images/image8.jpg' %}"><br>Homo heidelbergensis<br><br><br>
+     <img src="{% static 'images/image9.jpg' %}"><br>Homo sapiens neanderthalensis<br><br><br>
+     <img src="{% static 'images/image10.jpg' %}"><br>Homo sapiens idaltu<br><br><br>
+     <img src="{% static 'images/image11.jpg' %}"><br>Homo sapiens
+     </span></p>
+</div>
+<!--     <div class="col-md-8 " ><div class="div1"><h1 align="right">Несколько слов о Сафо</h1><br><h4>&nbsp;&nbsp;{{h2.content}}</h4></div></div>  -->
+<div class="col-md-8 " ><div class="jumbotronN"><h1 align="center">О происхождении человека</h1><br><h4>&nbsp;&nbsp;{{a1.content | safe}}</h4></div></div> 
+
+  </div>
+</div>
+
+</html>

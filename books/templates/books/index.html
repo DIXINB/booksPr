@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset= "utf-8" >
+</head>
+<body>
+<div align="center">
+<table bordercolor="gray" border="3" rules="all" width="99%" height="99%">
+<tr>
+<td valign="top" bgcolor="ivory" ><h2>&#1055;&#1085;</h2></td>
+<td valign="top" bgcolor="ivory"><h2>&#1040;&#1074;&#1090;&#1086;&#1088;</h2></td>
+<td valign="top" bgcolor="ivory"><h2>&#1053;&#1072;&#1079;&#1074;&#1072;&#1085;&#1080;&#1077;</h2></td>
+<td valign="top" bgcolor="ivory"><h2>&#1054; &#1095;&#1105;&#1084;</h2></td>
+<td valign="top" bgcolor="ivory"><h2>&#1043;&#1086;&#1076; &#1080;&#1079;&#1076;&#1072;&#1085;&#1080;&#1103;</h2></td>
+</tr>
+
+
+{% for item in book_list %}
+
+
+<tr>
+<td align="center" valign="top"><h2>{{forloop.counter}}</h2></td>
+<td valign="top"><h2>{% for item1 in item.authors.all %}{{item1.first_name}} {{item1.last_name}}{% endfor %}</h2></td>
+<td valign="top"><h2>{{item.title}} </h2></td>
+<td valign="top"><h2>{{item.content}} </h2></td>
+<td valign="top"><h2>{{item.publication}} </h2></td>
+</tr>
+
+{% endfor %}
+
+</table>  
+</div>
+
+</body>
+</html>
